@@ -10,7 +10,7 @@ fn main() {
 
         let intersection: Vec<u128> = primes.intersect(odds).take(10).collect();
 
-        println!("{:?}", intersection);
+        println!("primes intersection odds: {:?}", intersection);
     }
 
     {
@@ -19,7 +19,7 @@ fn main() {
 
         let union: Vec<u128> = evens.union(odds).take(10).collect();
 
-        println!("{:?}", union);
+        println!("evens union odds: {:?}", union);
     }
 
     // {
@@ -39,6 +39,6 @@ fn main() {
 
         let union: Vec<u128> = powers_of_two.union(odds).take(30).collect();
 
-        println!("{:?}", union);
+        println!("powers_of_two union odds: {:?}", union);
     }
 }
